@@ -8,7 +8,8 @@
   *
   */
 
- import rp from 'request-promise'; 
+ var rp = require('request-promise'); 
+ //var params = {"titles" : "Madonna"};
 
  console.log('Start');
  
@@ -18,17 +19,24 @@
      json : true
      }
      
-     console.log('JSON.parse');
-     
-     //console.log(rp(options));
-     
+ 
      return rp(options)
          .then (function (res) {
-             console.log(res['query']['pages'])
-             return { response : res['query']['pages'] }
+             //console.log(res['query']['pages'][0])
+             console.log('then');
+                 
+             var index = '';
+             for (var key in res['query']['pages']) {
+                index = key
+                }
+
+             return { response : res['query']['pages'][index]['extract'] }
          })
          .catch (function (err) {
-             console.log(err)
+            console.log('catch');
+            console.log(err)
          })
  }
+
+// main(params)
  
