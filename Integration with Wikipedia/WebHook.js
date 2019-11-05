@@ -9,7 +9,7 @@
   */
 
  var rp = require('request-promise'); 
- //var params = {"titles" : "Madonna"};
+ //var params = {"titles" : "youtube"};
 
  console.log('Start');
  
@@ -19,8 +19,7 @@
      json : true
      }
      
- 
-     return rp(options)
+    return rp(options)
          .then (function (res) {
              //console.log(res['query']['pages'][0])
              console.log('then');
@@ -29,7 +28,10 @@
              for (var key in res['query']['pages']) {
                 index = key
                 }
+            if (res['query']['pages'][index]['extract'] == "") {
 
+                res['query']['pages'][index]['extract'] = "Bohužel, na Wiki není o tomhle žádné info."
+             }
              return { response : res['query']['pages'][index]['extract'] }
          })
          .catch (function (err) {
@@ -38,5 +40,4 @@
          })
  }
 
-// main(params)
- 
+//main(params)
