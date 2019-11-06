@@ -9,26 +9,27 @@
   */
 
  var rp = require('request-promise'); 
- //var params = {"titles" : "youtube"};
+ //var params = {"titles" : "Aštar"};
 
  console.log('Start');
  
  function main(params) {
-     const options = {
-     uri :  "https://cs.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro&explaintext&titles=" + params.titles,
+    
+    const options = {
+     uri: encodeURI("https://cs.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro&explaintext&titles=" + params.titles),
      json : true
      }
      
     return rp(options)
          .then (function (res) {
-             //console.log(res['query']['pages'][0])
-             console.log('then');
+
+            console.log('then');
                  
              var index = '';
              for (var key in res['query']['pages']) {
                 index = key
                 }
-            if (res['query']['pages'][index]['extract'] == "") {
+            if (res['query']['pages'][index]['extract'] == "" || index == "-1" ) {
 
                 res['query']['pages'][index]['extract'] = "Bohužel, na Wiki není o tomhle žádné info."
              }
