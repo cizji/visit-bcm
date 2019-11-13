@@ -1,5 +1,5 @@
 # visit-bcm
-IBM Watson chatbot practical example - playground for visit of ZS E.Benese at Broadcom
+IBM Watson Assistant practical example - playground for visit of ZS E.Benese at Broadcom
 
 ## Integration with WIKI
 
