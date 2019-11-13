@@ -1,0 +1,194 @@
+dobrý den,POZDRAVY
+ahoj,POZDRAVY
+zdravím,POZDRAVY
+nazdar,POZDRAVY
+dobré ráno,POZDRAVY
+nazdárek,POZDRAVY
+čau,POZDRAVY
+dobré odpoledne,POZDRAVY
+dobré dopoledne,POZDRAVY
+dobrý večer,POZDRAVY
+zdravíčko,POZDRAVY
+čago belo,POZDRAVY
+čus,POZDRAVY
+čus bus,POZDRAVY
+čágo,POZDRAVY
+K čemu nejsi dobrý?,CO_NE
+K čemu nejste dobrý?,CO_NE
+Co neděláš?,CO_NE
+Co neděláte?,CO_NE
+Co teď neděláš?,CO_NE
+Co teď neděláte?,CO_NE
+Jaké nemáte funkce?,CO_NE
+Co neumíte?,CO_NE
+Co neumíš?,CO_NE
+Co ještě neumíš?,CO_NE
+Co nevíte?,CO_NE
+Co nevíš?,CO_NE
+Co nemohu říci?,CO_NE
+Co nemohu říct?,CO_NE
+Na co se nemohu zeptat?,CO_NE
+Na co se mohu zeptat?,CO_NE
+Co jste zač?,KDO
+Co jsi zač?,KDO
+Jste člověk?,KDO
+Jsi člověk?,KDO
+Jste žena?,KDO
+Jsi žena?,KDO
+Jsi robot?,KDO
+Jste robot?,KDO
+Jste muž?,KDO
+Jsi muž?,KDO
+Jsi bot?,KDO
+Jste bot?,KDO
+Jsi inteligentní?,KDO
+Jste inteligentní?,KDO
+Jsi chatbot?,KDO
+Jste chatbot?,KDO
+Pověz mi něco o sobě?,KDO
+Povězte mi něco o sobě?,KDO
+Proč bych se s vámi měl bavit?,PROC
+Proč bych se s tebou měl bavit?,PROC
+Proč má s Tebou ztrácet můj čas?,PROC
+Proč má s Vámi ztrácet můj čas?,PROC
+Proč jsi tady?,PROC
+Proč jste tady?,PROC
+Proč tě udělali?,PROC
+Proč vás udělali?,PROC
+Proč tu jsi?,PROC
+Proč tu jste?,PROC
+Jste hrozný,NEBAVI
+Jsi hrozný,NEBAVI
+Je s vámi nuda,NEBAVI
+Je s tebou nuda,NEBAVI
+Už mě to nebaví,NEBAVI
+Zklamal jsi,NEBAVI
+Zklamal jste,NEBAVI
+Zklamal jsi mě,NEBAVI
+Zklamal jste mne,NEBAVI
+Jsi k ničemu,NEBAVI
+Jste k ničemu,NEBAVI
+Ztráta času,NEBAVI
+Jdi k šípku,NEBAVI
+Jděte k šípku,NEBAVI
+Neotravuj,NEBAVI
+Neotravujte,NEBAVI
+Zmiz,NEBAVI
+Zmizte,NEBAVI
+Otravuješ,NEBAVI
+Otravujete,NEBAVI
+To už jste psal,NEBAVI
+To už jsi psal,NEBAVI
+Konečně to máte správně.,SPRAVNE
+Konečně to máš správně.,SPRAVNE
+Konečně,SPRAVNE
+To to trvalo,SPRAVNE
+Máš to správně,SPRAVNE
+Máte to správně,SPRAVNE
+Tak konečně,SPRAVNE
+Toto trvalo,SPRAVNE
+Jaké další témata?,CO_VITE
+Co ještě víš?,CO_VITE
+Co ještě víte?,CO_VITE
+Co dalšího?,CO_VITE
+Co jiného?,CO_VITE
+A co jinak?,JAK_SE_VEDE
+Jak se vede?,JAK_SE_VEDE
+Nefunguje to,SPATNE
+Vedle,SPATNE
+Jsi hlupák,SPATNE
+Moc toho nevíš,SPATNE
+to je slabé,SPATNE
+nejsi moc inteligentní,SPATNE
+Tohle jsem nemyslel.,SPATNE
+Vůbec to nefunguje,SPATNE
+"Nefunguješ, jak jsem si představoval",SPATNE
+To mě nezajímá,SPATNE
+"Nenavidím ",NEGATIVNI
+To nejsou moc dobré zprávy.,NEGATIVNI
+to jsou špatné zprávy.,NEGATIVNI
+To je ale hrůza.,NEGATIVNI
+To je tedy špatné.,NEGATIVNI
+To je blbé.,NEGATIVNI
+Děkuji Vám.,POZITIVNI
+Děkuji Ti.,POZITIVNI
+Díky.,POZITIVNI
+Dík.,POZITIVNI
+Děkuju.,POZITIVNI
+Děkuji.,POZITIVNI
+Moc děkuji.,POZITIVNI
+Díky moc.,POZITIVNI
+Jste hodný.,POZITIVNI
+To je pravda,DOBRA_ODPOVED
+"tak se nepleteš, je hezky",DOBRA_ODPOVED
+máš pravdu,DOBRA_ODPOVED
+to není špatné,DOBRA_ODPOVED
+věřím vám,DOBRA_ODPOVED
+věřím ti,DOBRA_ODPOVED
+umíš předpovídat,DOBRA_ODPOVED
+dobrá předpověd,DOBRA_ODPOVED
+to je dobré,DOBRA_ODPOVED
+líbíš se mi,DOBRA_ODPOVED
+jsi šikovný,DOBRA_ODPOVED
+jsi dobrý,DOBRA_ODPOVED
+jste dobrý,DOBRA_ODPOVED
+"kloubok dolů, jde Vám to",DOBRA_ODPOVED
+jde Vám to,DOBRA_ODPOVED
+děkuji,DOBRA_ODPOVED
+děkuji Vám,DOBRA_ODPOVED
+to je paráda,DOBRA_ODPOVED
+paráda,DOBRA_ODPOVED
+skvěle,DOBRA_ODPOVED
+to je skvělé,DOBRA_ODPOVED
+super,DOBRA_ODPOVED
+výborně,DOBRA_ODPOVED
+to je prima,DOBRA_ODPOVED
+prima,DOBRA_ODPOVED
+nádhera,DOBRA_ODPOVED
+to je nadhera,DOBRA_ODPOVED
+pěkný,DOBRA_ODPOVED
+pěkné,DOBRA_ODPOVED
+moc pěkné,DOBRA_ODPOVED
+no to je bomba,DOBRA_ODPOVED
+úžas,DOBRA_ODPOVED
+cool,DOBRA_ODPOVED
+bájo,DOBRA_ODPOVED
+báječné,DOBRA_ODPOVED
+báječně,DOBRA_ODPOVED
+Souhlasím,DOBRA_ODPOVED
+OK,DOBRA_ODPOVED
+doporučím vás známým,DOBRA_ODPOVED
+To není pravda,SPATNA_ODPOVED
+"Pleteš se, je hezky",SPATNA_ODPOVED
+Pleteš se neprší,SPATNA_ODPOVED
+Pleteš se tady prší,SPATNA_ODPOVED
+Nevěřím Vám,SPATNA_ODPOVED
+Nevěřím Ti,SPATNA_ODPOVED
+Jak to víš,SPATNA_ODPOVED
+Jsi si jistý,SPATNA_ODPOVED
+"Jsi si jistý, že tak bude?",SPATNA_ODPOVED
+Opravdu tak bude,SPATNA_ODPOVED
+To není možné,SPATNA_ODPOVED
+Nepovídej,SPATNA_ODPOVED
+neumíš předpovídat,SPATNA_ODPOVED
+špatná předpověd,SPATNA_ODPOVED
+kecáš,SPATNA_ODPOVED
+kecáte,SPATNA_ODPOVED
+to myslíš vážně,SPATNA_ODPOVED
+ne nemůžeš myslet vážně,SPATNA_ODPOVED
+nic Moc,SPATNA_ODPOVED
+nerozumíš mi// IBM TO DO - skočit do stromu?,NEROZUMIM
+vůbec nerozumíš,NEROZUMIM
+ničemu nerozumíš,NEROZUMIM
+Do you speak english,JINE_JAZYKY
+english,JINE_JAZYKY
+Do you understand english?,JINE_JAZYKY
+speak,JINE_JAZYKY
+understand,JINE_JAZYKY
+what,JINE_JAZYKY
+how,JINE_JAZYKY
+Verstehen Sie Deutsch?,JINE_JAZYKY
+deutsch,JINE_JAZYKY
+Sprichst du Deutsch?,JINE_JAZYKY
+sprechen,JINE_JAZYKY
+verstehen,JINE_JAZYKY
