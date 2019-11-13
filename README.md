@@ -1,5 +1,5 @@
 # visit-bcm
-IBM Watson chatbot playground
+IBM Watson chatbot playground for Vissit of ZS E.Benese at Broadcom
 
 ## Integration with WIKI
 
