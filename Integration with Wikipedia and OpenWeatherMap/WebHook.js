@@ -23,14 +23,16 @@
     return rp(options)
          .then (function (res) {
 
-             var index = '';
+            // Wiki returns 'page number' as a key (eg. "23456"), we need to know this key to retrieve extract from the JSON tree 
+             var index = '';              
              for (var key in res['query']['pages']) {
                 index = key
                 }
+            // Generate answer for cases when extract field is empty or nothing found at all
             if (res['query']['pages'][index]['extract'] == "" || index == "-1" ) {
-
                 res['query']['pages'][index]['extract'] = "Tak bohužel, na české Wiki není o "+ params.titles + " žádné info."
              }
+             // Add JSON to response and return it back to Watson Assistant 
              return { response : res['query']['pages'][index]['extract'] }
          })
          .catch (function (err) {
@@ -44,10 +46,11 @@
         }
        return rp(options)
           .then (function (res) {
-
+            // Generate answer for cases when extract field is empty or nothing found at all
            if (res['cod'] != "200" ) {
                 res['main'['temp']] = "Tak bohužel, město "+ params.titles + "  jsem nenašel na mapě."
              }
+             // Add JSON to response and return it back to Watson Assistant 
              return { response : res }
          })
          .catch (function (err) {
