@@ -2,42 +2,19 @@
   "name": "Pozdrav + Pocasi",
   "intents": [
     {
-      "intent": "Vanocni",
+      "intent": "Pocasi",
       "examples": [
         {
-          "text": "o vanocich"
+          "text": "Jaké je počasí v"
         },
         {
-          "text": "vanoce"
+          "text": "Zjisti počasí v"
         },
         {
-          "text": "vanocni"
-        }
-      ]
-    },
-    {
-      "intent": "Pozdrav",
-      "examples": [
-        {
-          "text": "Ahoj"
+          "text": "Jak je v"
         },
         {
-          "text": "dobrý den"
-        },
-        {
-          "text": "čau"
-        }
-      ],
-      "description": ""
-    },
-    {
-      "intent": "Pepicek",
-      "examples": [
-        {
-          "text": "pepicek"
-        },
-        {
-          "text": "o pepickovi"
+          "text": "Jaké je počasí"
         }
       ],
       "description": ""
@@ -49,27 +26,50 @@
           "text": "Rekni vtip"
         },
         {
-          "text": "Umis nejaky vtip?"
+          "text": "Vtip"
         },
         {
-          "text": "Vtip"
+          "text": "Umis nejaky vtip?"
         }
       ]
     },
     {
-      "intent": "Pocasi",
+      "intent": "Pepicek",
       "examples": [
         {
-          "text": "Jak je v"
+          "text": "o pepickovi"
         },
         {
-          "text": "Jaké je počasí v"
+          "text": "pepicek"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Vanocni",
+      "examples": [
+        {
+          "text": "o vanocich"
         },
         {
-          "text": "Zjisti počasí v"
+          "text": "vanocni"
         },
         {
-          "text": "Jaké je počasí"
+          "text": "vanoce"
+        }
+      ]
+    },
+    {
+      "intent": "Pozdrav",
+      "examples": [
+        {
+          "text": "čau"
+        },
+        {
+          "text": "dobrý den"
+        },
+        {
+          "text": "Ahoj"
         }
       ],
       "description": ""
@@ -80,10 +80,10 @@
   "metadata": {
     "api_version": {
       "major_version": "v1",
-      "minor_version": "2018-09-20"
+      "minor_version": "2018-07-10"
     }
   },
-  "skill_id": "e6d73dca-bc16-4d4f-ad2a-299ddd470575",
+  "skill_id": "11259d2d-5f51-4f75-b831-e1b566ef43d9",
   "webhooks": [
     {
       "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/namespaces/visitbcm2%40gmail.com_dev/actions/WebHook?blocking=true",
@@ -99,25 +99,13 @@
   "description": "",
   "dialog_nodes": [
     {
-      "type": "standard",
-      "title": "Vtipy",
-      "parent": "node_3_1574258559528",
-      "metadata": {
-        "_customization": {
-          "mcr": true
-        }
-      },
-      "conditions": "true",
-      "dialog_node": "node_7_1574258808218"
-    },
-    {
       "type": "response_condition",
       "output": {
         "generic": [
           {
             "values": [
               {
-                "text": ""
+                "text": "Tak to vypadá, že tohle město jsem nenašel."
               }
             ],
             "response_type": "text",
@@ -146,7 +134,7 @@
         ]
       },
       "parent": "node_5_1573731609071",
-      "conditions": "$webhook_result_1",
+      "conditions": "$webhook_result_1.response.result.response.main.temp",
       "dialog_node": "response_7_1573731670013"
     },
     {
@@ -213,6 +201,18 @@
     },
     {
       "type": "standard",
+      "title": "Vtipy",
+      "parent": "node_3_1574258559528",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_7_1574258808218"
+    },
+    {
+      "type": "standard",
       "title": "Vtip",
       "output": {
         "generic": [
@@ -230,6 +230,32 @@
       "conditions": "#Vtip",
       "dialog_node": "node_3_1574258559528",
       "previous_sibling": "node_2_1573667971855"
+    },
+    {
+      "type": "standard",
+      "title": "V ostatních případech",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Mohl byste se zeptat ještě jednou a trochu jinak? Neporozuměl jsem."
+              },
+              {
+                "text": "Zcela jsem neporozuměl tomu, na co se ptáte."
+              },
+              {
+                "text": "Vůbec nerozumím, zkuste to jinak."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "V ostatních případech",
+      "previous_sibling": "node_5_1573731542791"
     },
     {
       "type": "standard",
@@ -279,32 +305,6 @@
     },
     {
       "type": "standard",
-      "title": "V ostatních případech",
-      "output": {
-        "generic": [
-          {
-            "values": [
-              {
-                "text": "Mohl byste se zeptat ještě jednou a trochu jinak? Neporozuměl jsem."
-              },
-              {
-                "text": "Zcela jsem neporozuměl tomu, na co se ptáte."
-              },
-              {
-                "text": "Vůbec nerozumím, zkuste to jinak."
-              }
-            ],
-            "response_type": "text",
-            "selection_policy": "sequential"
-          }
-        ]
-      },
-      "conditions": "anything_else",
-      "dialog_node": "V ostatních případech",
-      "previous_sibling": "node_5_1573731542791"
-    },
-    {
-      "type": "standard",
       "title": "Vítejte",
       "output": {
         "generic": [
@@ -323,8 +323,12 @@
       "dialog_node": "Vítejte"
     }
   ],
-  "workspace_id": "e6d73dca-bc16-4d4f-ad2a-299ddd470575",
-  "counterexamples": [],
+  "workspace_id": "11259d2d-5f51-4f75-b831-e1b566ef43d9",
+  "counterexamples": [
+    {
+      "text": "co"
+    }
+  ],
   "system_settings": {
     "tooling": {
       "store_generic_responses": true
