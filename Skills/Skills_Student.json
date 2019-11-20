@@ -2,6 +2,20 @@
   "name": "Pozdrav + Pocasi",
   "intents": [
     {
+      "intent": "Vanocni",
+      "examples": [
+        {
+          "text": "o vanocich"
+        },
+        {
+          "text": "vanoce"
+        },
+        {
+          "text": "vanocni"
+        }
+      ]
+    },
+    {
       "intent": "Pozdrav",
       "examples": [
         {
@@ -17,16 +31,42 @@
       "description": ""
     },
     {
+      "intent": "Pepicek",
+      "examples": [
+        {
+          "text": "pepicek"
+        },
+        {
+          "text": "o pepickovi"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Vtip",
+      "examples": [
+        {
+          "text": "Rekni vtip"
+        },
+        {
+          "text": "Umis nejaky vtip?"
+        },
+        {
+          "text": "Vtip"
+        }
+      ]
+    },
+    {
       "intent": "Pocasi",
       "examples": [
         {
           "text": "Jak je v"
         },
         {
-          "text": "Zjisti počasí v"
+          "text": "Jaké je počasí v"
         },
         {
-          "text": "Jaké je počasí v"
+          "text": "Zjisti počasí v"
         },
         {
           "text": "Jaké je počasí"
@@ -40,10 +80,10 @@
   "metadata": {
     "api_version": {
       "major_version": "v1",
-      "minor_version": "2018-07-10"
+      "minor_version": "2018-09-20"
     }
   },
-  "skill_id": "50aba388-bf2d-47f3-98ef-23bfbaa8b2e0",
+  "skill_id": "e6d73dca-bc16-4d4f-ad2a-299ddd470575",
   "webhooks": [
     {
       "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/namespaces/visitbcm2%40gmail.com_dev/actions/WebHook?blocking=true",
@@ -56,29 +96,19 @@
       ]
     }
   ],
+  "description": "",
   "dialog_nodes": [
     {
       "type": "standard",
-      "title": "Pocasi - hledej",
-      "parent": "node_5_1573731542791",
-      "actions": [
-        {
-          "name": "main_webhook",
-          "type": "webhook",
-          "parameters": {
-            "action": "Weather",
-            "search_value": "<?input.text?>"
-          },
-          "result_variable": "webhook_result_1"
-        }
-      ],
+      "title": "Vtipy",
+      "parent": "node_3_1574258559528",
       "metadata": {
         "_customization": {
           "mcr": true
         }
       },
       "conditions": "true",
-      "dialog_node": "node_5_1573731609071"
+      "dialog_node": "node_7_1574258808218"
     },
     {
       "type": "response_condition",
@@ -121,6 +151,88 @@
     },
     {
       "type": "standard",
+      "title": "Pocasi - hledej",
+      "parent": "node_5_1573731542791",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "action": "Weather",
+            "search_value": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1573731609071"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "„Mami, já bych chtěl k Vánocům psa!“ prosí Michálek maminku. „Nic si nevymýšlej, budeš mít kapra, jako my všichni.“"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1574258808218",
+      "conditions": "#Vanocni",
+      "dialog_node": "response_5_1574258921083",
+      "previous_sibling": "response_4_1574258853415"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"Mami, mami, mám dobrou a špatnou zprávu, jakou chceš slyšet první?\" Ptá se Pepíček maminky. \"Tak tu dobrou. \"Dostal jsem jedničku z diktátu!\" \"To je hezké, Pepíčku a jaká je ta špatná?\" \"Že to není pravda!\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1574258808218",
+      "conditions": "#Pepicek",
+      "dialog_node": "response_4_1574258853415"
+    },
+    {
+      "type": "standard",
+      "title": "Vtip",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A jaký byste si přáli vtip (o vánocích, o pepíčkovi) ?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Vtip",
+      "dialog_node": "node_3_1574258559528",
+      "previous_sibling": "node_2_1573667971855"
+    },
+    {
+      "type": "standard",
       "title": "Pocasi",
       "output": {
         "generic": [
@@ -137,7 +249,7 @@
       },
       "conditions": "#Pocasi",
       "dialog_node": "node_5_1573731542791",
-      "previous_sibling": "node_2_1573667971855"
+      "previous_sibling": "node_3_1574258559528"
     },
     {
       "type": "standard",
@@ -172,9 +284,6 @@
         "generic": [
           {
             "values": [
-              {
-                "text": "Nerozumím. Zkuste přeformulovat váš dotaz."
-              },
               {
                 "text": "Mohl byste se zeptat ještě jednou a trochu jinak? Neporozuměl jsem."
               },
@@ -214,7 +323,7 @@
       "dialog_node": "Vítejte"
     }
   ],
-  "workspace_id": "50aba388-bf2d-47f3-98ef-23bfbaa8b2e0",
+  "workspace_id": "e6d73dca-bc16-4d4f-ad2a-299ddd470575",
   "counterexamples": [],
   "system_settings": {
     "tooling": {
