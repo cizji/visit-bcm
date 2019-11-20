@@ -1,6 +1,12 @@
 # visit-bcm
 IBM Watson Assistant practical example - playground for visit of ZS E.Benese at Broadcom
 
+## Skills
+The folder contains skill set (dialogs, entities, intents) that can be imported into Watson assistant. There are two version:
+
+1. Skills_Student.json - simple set to be used for the exercises for playing 
+2. Skills_Master.json - skillset with all features to be used as example of completed exercise
+
 ## Integration with WIKI
 
 API link example https://cs.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro&explaintext&titles=Madonna
