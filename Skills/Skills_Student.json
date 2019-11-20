@@ -1,0 +1,233 @@
+{
+  "name": "Pozdrav + Pocasi",
+  "intents": [
+    {
+      "intent": "Pozdrav",
+      "examples": [
+        {
+          "text": "Ahoj"
+        },
+        {
+          "text": "dobrý den"
+        },
+        {
+          "text": "čau"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Pocasi",
+      "examples": [
+        {
+          "text": "Jak je v"
+        },
+        {
+          "text": "Zjisti počasí v"
+        },
+        {
+          "text": "Jaké je počasí v"
+        },
+        {
+          "text": "Jaké je počasí"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [],
+  "language": "cs",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-07-10"
+    }
+  },
+  "skill_id": "50aba388-bf2d-47f3-98ef-23bfbaa8b2e0",
+  "webhooks": [
+    {
+      "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/namespaces/visitbcm2%40gmail.com_dev/actions/WebHook?blocking=true",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Basic N2Y3MmQ2YWMtZWE3YS00MDk1LWE4M2YtOTcxMTBhOGQ2NzcwOkNtOGRTbEVRVDZjNGthUE1HRWJJUkF0eFNVRVNxV1N5SDJQZlU3Vkk1R2tLV3doVHc1QXpLOU85RkNZWUZCMjY="
+        }
+      ]
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "Pocasi - hledej",
+      "parent": "node_5_1573731542791",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "action": "Weather",
+            "search_value": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "true",
+      "dialog_node": "node_5_1573731609071"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": ""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1573731609071",
+      "conditions": "anything_else",
+      "dialog_node": "response_8_1573731671022",
+      "previous_sibling": "response_7_1573731670013"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Teplota je <?$webhook_result_1.response.result.response.main.temp?> stupňů Celsia."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1573731609071",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_7_1573731670013"
+    },
+    {
+      "type": "standard",
+      "title": "Pocasi",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Umím zjistit počasí ve světových městech. Zadejte prosím název města."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Pocasi",
+      "dialog_node": "node_5_1573731542791",
+      "previous_sibling": "node_2_1573667971855"
+    },
+    {
+      "type": "standard",
+      "title": "Pozdrav",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahoj"
+              },
+              {
+                "text": "Dobrý den"
+              },
+              {
+                "text": "Čau"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Pozdrav",
+      "dialog_node": "node_2_1573667971855",
+      "previous_sibling": "Vítejte"
+    },
+    {
+      "type": "standard",
+      "title": "V ostatních případech",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nerozumím. Zkuste přeformulovat váš dotaz."
+              },
+              {
+                "text": "Mohl byste se zeptat ještě jednou a trochu jinak? Neporozuměl jsem."
+              },
+              {
+                "text": "Zcela jsem neporozuměl tomu, na co se ptáte."
+              },
+              {
+                "text": "Vůbec nerozumím, zkuste to jinak."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "V ostatních případech",
+      "previous_sibling": "node_5_1573731542791"
+    },
+    {
+      "type": "standard",
+      "title": "Vítejte",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Dobrý den, jak vám mohu pomoci?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Vítejte"
+    }
+  ],
+  "workspace_id": "50aba388-bf2d-47f3-98ef-23bfbaa8b2e0",
+  "counterexamples": [],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "disambiguation": {
+      "prompt": "Vyberte prosím:",
+      "none_of_the_above_prompt": "Nic z výše uvedeného"
+    },
+    "human_agent_assist": {
+      "prompt": "Vyberte prosím:"
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}
