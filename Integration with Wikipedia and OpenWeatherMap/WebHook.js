@@ -41,7 +41,7 @@
          })
    } else if (params.action == "Weather") {
         const options = {
-            uri: encodeURI("http://api.openweathermap.org/data/2.5/weather?apikey=4a2360d14bf33378079d2e2d49e35ddb&mode=json&units=metric&q=" + params.search_value),
+            uri: encodeURI("http://api.openweathermap.org/data/2.5/weather?apikey=4a2360d14bf33378079d2e2d49e35ddb&mode=json&lang=cz&units=metric&q=" + params.search_value),
             json : true
         }
        return rp(options)
