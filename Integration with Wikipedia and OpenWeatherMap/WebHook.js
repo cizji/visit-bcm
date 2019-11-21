@@ -9,7 +9,6 @@
   */
 
  var rp = require('request-promise'); 
- //var params = {"titles" : "Aštar"};
 
  console.log('Start');
  
@@ -61,5 +60,3 @@
    }
    
  }
-
-//main(params)
