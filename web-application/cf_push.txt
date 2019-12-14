@@ -1,0 +1,191 @@
+PS C:\Users\jc891278\Documents\GitHub\visit-bcm\web-application> ibmcloud target --cf
+Targeted Cloud Foundry (https://api.eu-gb.cf.cloud.ibm.com)
+
+Targeted org visitbcm.master@gmail.com
+
+Targeted space dev
+
+
+
+API endpoint:      https://cloud.ibm.com
+Region:            eu-gb
+User:              visitbcm.master@gmail.com
+Account:           BCM Visit Master's Account (149a1082d62d47bdbc20cef2e3e07e1b)
+Resource group:    No resource group targeted, use 'C:\Program Files\IBM\Cloud\bin\ibmcloud.exe target -g RESOURCE_GROUP'
+CF API endpoint:   https://api.eu-gb.cf.cloud.ibm.com (API version: 2.142.0)
+Org:               visitbcm.master@gmail.com
+Space:             dev
+PS C:\Users\jc891278\Documents\GitHub\visit-bcm\web-application> ibmcloud cf push
+Invoking 'cf push'...
+
+Pushing from manifest to org visitbcm.master@gmail.com / space dev as visitbcm.master@gmail.com...
+Using manifest file C:\Users\jc891278\Documents\GitHub\visit-bcm\web-application\manifest.yml
+Getting app info...
+Creating app with these attributes...
++ name:        chatbot-wiki-weather-time
+  path:        C:\Users\jc891278\Documents\GitHub\visit-bcm\web-application
++ command:     npm start
++ instances:   1
++ memory:      256M
+  routes:
++   chatbot-wiki-weather-time.eu-gb.mybluemix.net
+
+Creating app chatbot-wiki-weather-time...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 102.20 KiB / 102.20 KiB [================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+You have exceeded your organization's memory limit: app requested more memory than available
+FAILED
+PS C:\Users\jc891278\Documents\GitHub\visit-bcm\web-application> ibmcloud cf push
+Invoking 'cf push'...
+
+Pushing from manifest to org visitbcm.master@gmail.com / space dev as visitbcm.master@gmail.com...
+Using manifest file C:\Users\jc891278\Documents\GitHub\visit-bcm\web-application\manifest.yml
+Getting app info...
+Updating app with these attributes...
+  name:                chatbot-wiki-weather-time
+  path:                C:\Users\jc891278\Documents\GitHub\visit-bcm\web-application
+  command:             npm start
+  disk quota:          1G
+  health check type:   port
+  instances:           1
+  memory:              256M
+  stack:               cflinuxfs3
+  routes:
+    chatbot-wiki-weather-time.eu-gb.mybluemix.net
+
+Updating app chatbot-wiki-weather-time...
+Mapping routes...
+Comparing local files to remote cache...
+Packaging files to upload...
+Uploading files...
+ 102.20 KiB / 102.20 KiB [================================================================================================] 100.00% 1s
+
+Waiting for API to complete processing files...
+
+Staging app and tracing logs...
+   Downloading xpages_buildpack...
+   Downloading java_buildpack...
+   Downloading python_buildpack...
+   Downloading liberty-for-java_v3_38-20191031-1433...
+   Downloading liberty-for-java...
+   Downloaded liberty-for-java_v3_38-20191031-1433
+   Downloading sdk-for-nodejs...
+   Downloaded python_buildpack
+   Downloading dotnet-core...
+   Downloaded xpages_buildpack
+   Downloading swift_buildpack...
+   Downloaded java_buildpack
+   Downloading nodejs_buildpack...
+   Downloaded liberty-for-java
+   Downloading ruby_buildpack...
+   Downloaded sdk-for-nodejs
+   Downloading go_buildpack...
+   Downloaded dotnet-core
+   Downloading dotnet-core_v2_4-20190912-1554...
+   Downloaded nodejs_buildpack
+   Downloading php_buildpack...
+   Downloaded swift_buildpack
+   Downloading binary_buildpack...
+   Downloaded ruby_buildpack
+   Downloading swift_buildpack_v2_0_18-20190303-1915...
+   Downloaded dotnet-core_v2_4-20190912-1554
+   Downloading swift_buildpack_v2_0_20-20190401-2122...
+   Downloaded go_buildpack
+   Downloading swift_buildpack_cflinuxfs3_v2_1_0-20190404-1206...
+   Downloaded binary_buildpack
+   Downloading dotnet-core_v2_3-20190609-2145...
+   Downloaded swift_buildpack_v2_0_18-20190303-1915
+   Downloading nginx_buildpack...
+   Downloaded php_buildpack
+   Downloading sdk-for-nodejs_v3_28-20190722-1336...
+   Downloaded swift_buildpack_v2_0_20-20190401-2122
+   Downloading sdk-for-nodejs_v4_0_1-20190930-1425...
+   Downloaded swift_buildpack_cflinuxfs3_v2_1_0-20190404-1206
+   Downloading staticfile_buildpack...
+   Downloaded sdk-for-nodejs_v3_28-20190722-1336
+   Downloading xpages_buildpack_v1_2_1-20160913-103...
+   Downloaded dotnet-core_v2_3-20190609-2145
+   Downloading liberty-for-java_v3_36-20190905-1704...
+   Downloaded nginx_buildpack
+   Downloading r_buildpack...
+   Downloaded sdk-for-nodejs_v4_0_1-20190930-1425
+   Downloading liberty-for-java_v3_37-20191002-1726...
+   Downloaded staticfile_buildpack
+   Downloaded liberty-for-java_v3_36-20190905-1704
+   Downloaded xpages_buildpack_v1_2_1-20160913-103
+   Downloaded r_buildpack
+   Downloaded liberty-for-java_v3_37-20191002-1726
+   Cell bc946535-4096-44d3-894e-6d36818b43de creating container for instance fd0e4602-45d7-44ce-998e-9d6433fbe0e9
+   Cell bc946535-4096-44d3-894e-6d36818b43de successfully created container for instance fd0e4602-45d7-44ce-998e-9d6433fbe0e9
+   Downloading app package...
+   Downloaded app package (3.5M)
+   cat: /VERSION: No such file or directory
+   -----> IBM SDK for Node.js Buildpack v4.0.1-20190930-1425
+          Based on Cloud Foundry Node.js Buildpack 1.6.53
+
+   -----> Installing binaries
+          engines.node (package.json): >=12
+          engines.npm (package.json): unspecified (use default)
+          **WARNING** Dangerous semver range (>) in engines.node. See: http://docs.cloudfoundry.org/buildpacks/node/node-tips.html
+          Attempting to install: 12.8.1
+   -----> Installing node 12.8.1
+          Copy [/tmp/buildpacks/40386ebb61e6725a1463380a55a80e9d/dependencies/4285a30a31033ebbd0cb2e8c22191a26/node-12.8.1-linux-x64-cflinuxfs3-c7ab50ce.tgz]
+          Using default npm version: 6.10.2
+   -----> Installing yarn 1.17.3
+          Copy [/tmp/buildpacks/40386ebb61e6725a1463380a55a80e9d/dependencies/748132b4ee4ecaf8bbb5bfa5932e6689/yarn-1.17.3-any-stack-e3835194.tar.gz]
+          Installed yarn 1.17.3
+   -----> Creating runtime environment
+          PRO TIP: It is recommended to vendor the application's Node.js dependencies
+          Visit http://docs.cloudfoundry.org/buildpacks/node/index.html#vendoring
+          NODE_ENV=production
+          NODE_HOME=/tmp/contents407332237/deps/0/node
+          NODE_MODULES_CACHE=true
+          NODE_VERBOSE=false
+          NPM_CONFIG_LOGLEVEL=error
+          NPM_CONFIG_PRODUCTION=true
+   -----> Building dependencies
+          Installing node modules (package.json + package-lock.json)
+   > websocket@1.0.30 install /tmp/app/node_modules/websocket
+   > (node-gyp rebuild 2> builderror.log) || (exit 0)
+   make: Entering directory '/tmp/app/node_modules/websocket/build'
+     CXX(target) Release/obj.target/bufferutil/src/bufferutil.o
+   bufferutil.target.mk:110: recipe for target 'Release/obj.target/bufferutil/src/bufferutil.o' failed
+   make: Leaving directory '/tmp/app/node_modules/websocket/build'
+   added 110 packages from 135 contributors and audited 876975 packages in 41.302s
+   found 3 high severity vulnerabilities
+     run `npm audit fix` to fix them, or `npm audit` for details
+          **WARNING** Unmet dependencies don't fail npm install but may cause runtime issues
+          See: https://github.com/npm/npm/issues/7494
+          Contrast Security no credentials found. Will not write environment files.
+   Exit status 0
+   Uploading droplet, build artifacts cache...
+   Uploading droplet...
+   Uploading build artifacts cache...
+   Uploaded build artifacts cache (2.5M)
+   Uploaded droplet (28.6M)
+   Uploading complete
+   Cell bc946535-4096-44d3-894e-6d36818b43de stopping instance fd0e4602-45d7-44ce-998e-9d6433fbe0e9
+   Cell bc946535-4096-44d3-894e-6d36818b43de destroying container for instance fd0e4602-45d7-44ce-998e-9d6433fbe0e9
+
+Waiting for app to start...
+
+name:              chatbot-wiki-weather-time
+requested state:   started
+routes:            chatbot-wiki-weather-time.eu-gb.mybluemix.net
+last uploaded:     Fri 29 Nov 16:07:23 CET 2019
+stack:             cflinuxfs3
+buildpacks:        sdk-for-nodejs
+
+type:            web
+instances:       1/1
+memory usage:    256M
+start command:   npm start
+     state     since                  cpu    memory      disk      details
+#0   running   2019-11-29T15:07:51Z   0.0%   0 of 256M   0 of 1G

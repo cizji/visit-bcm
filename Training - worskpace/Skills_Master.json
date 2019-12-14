@@ -1,0 +1,2615 @@
+{
+  "name": "Wiki + Vtipy + Pocasi + Cas",
+  "intents": [
+    {
+      "intent": "vanoce",
+      "examples": [
+        {
+          "text": "vánoce"
+        },
+        {
+          "text": "vanocni"
+        },
+        {
+          "text": "vánoční"
+        },
+        {
+          "text": "o vanocich"
+        },
+        {
+          "text": "vanoce"
+        },
+        {
+          "text": "o vánocích"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "CO_JE_API",
+      "examples": [
+        {
+          "text": "co je API"
+        },
+        {
+          "text": "co je to API"
+        },
+        {
+          "text": "API"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "SPATNA_ODPOVED",
+      "examples": [
+        {
+          "text": "Pleteš se neprší"
+        },
+        {
+          "text": "Pleteš se, je hezky"
+        },
+        {
+          "text": "To není pravda"
+        },
+        {
+          "text": "Nevěřím Ti"
+        },
+        {
+          "text": "Pleteš se tady prší"
+        },
+        {
+          "text": "Jak to víš"
+        },
+        {
+          "text": "Jsi si jistý"
+        },
+        {
+          "text": "Jsi si jistý, že tak bude?"
+        },
+        {
+          "text": "Nepovídej"
+        },
+        {
+          "text": "neumíš předpovídat"
+        },
+        {
+          "text": "špatná předpověd"
+        },
+        {
+          "text": "kecáš"
+        },
+        {
+          "text": "kecáte"
+        },
+        {
+          "text": "to myslíš vážně"
+        },
+        {
+          "text": "ne nemůžeš myslet vážně"
+        },
+        {
+          "text": "Nevěřím Vám"
+        },
+        {
+          "text": "nic Moc"
+        },
+        {
+          "text": "Opravdu tak bude"
+        },
+        {
+          "text": "To není možné"
+        }
+      ]
+    },
+    {
+      "intent": "Hledani_Wikipedie",
+      "examples": [
+        {
+          "text": "hledej"
+        },
+        {
+          "text": "najdi"
+        },
+        {
+          "text": "najdi ve wikipedii"
+        },
+        {
+          "text": "wikipedie"
+        },
+        {
+          "text": "najdi ve wiki"
+        },
+        {
+          "text": "wiki"
+        },
+        {
+          "text": "rekni mi kdo je"
+        },
+        {
+          "text": "kdo je"
+        },
+        {
+          "text": "co je"
+        },
+        {
+          "text": "hledat"
+        },
+        {
+          "text": "nevis co je to"
+        }
+      ]
+    },
+    {
+      "intent": "PROC",
+      "examples": [
+        {
+          "text": "Proč má s Vámi ztrácet můj čas?"
+        },
+        {
+          "text": "Proč bych se s tebou měl bavit?"
+        },
+        {
+          "text": "Proč tu jste?"
+        },
+        {
+          "text": "Proč jsi tady?"
+        },
+        {
+          "text": "Proč jste tady?"
+        },
+        {
+          "text": "Proč tě udělali?"
+        },
+        {
+          "text": "Proč vás udělali?"
+        },
+        {
+          "text": "Proč tu jsi?"
+        },
+        {
+          "text": "Proč bych se s vámi měl bavit?"
+        },
+        {
+          "text": "Proč má s Tebou ztrácet můj čas?"
+        }
+      ]
+    },
+    {
+      "intent": "Ano",
+      "examples": [
+        {
+          "text": "Jasně"
+        },
+        {
+          "text": "Jo"
+        },
+        {
+          "text": "Ano"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "JAK_SE_VEDE",
+      "examples": [
+        {
+          "text": "A co jinak?"
+        },
+        {
+          "text": "Jak se vede?"
+        },
+        {
+          "text": "Jak je?"
+        },
+        {
+          "text": "Jak se máš?"
+        }
+      ]
+    },
+    {
+      "intent": "POZDRAVY",
+      "examples": [
+        {
+          "text": "dobré odpoledne"
+        },
+        {
+          "text": "dobrý den"
+        },
+        {
+          "text": "ahoj"
+        },
+        {
+          "text": "zdravím"
+        },
+        {
+          "text": "nazdar"
+        },
+        {
+          "text": "dobré ráno"
+        },
+        {
+          "text": "nazdárek"
+        },
+        {
+          "text": "čau"
+        },
+        {
+          "text": "čágo"
+        },
+        {
+          "text": "čus bus"
+        },
+        {
+          "text": "čus"
+        },
+        {
+          "text": "čago belo"
+        },
+        {
+          "text": "zdravíčko"
+        },
+        {
+          "text": "dobrý večer"
+        },
+        {
+          "text": "dobré dopoledne"
+        }
+      ]
+    },
+    {
+      "intent": "Objednavka_pizza",
+      "examples": [
+        {
+          "text": "Pizza"
+        },
+        {
+          "text": "Objednej mi pizzu"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Jaky_je_cas",
+      "examples": [
+        {
+          "text": "jaky je cas"
+        },
+        {
+          "text": "Kolik je hodin"
+        },
+        {
+          "text": "cas"
+        },
+        {
+          "text": "čas"
+        },
+        {
+          "text": "jaký je čas"
+        },
+        {
+          "text": "kolik je v"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "Jake_je_pocasi",
+      "examples": [
+        {
+          "text": "Jak je v @Mesta"
+        },
+        {
+          "text": "Jak je v"
+        },
+        {
+          "text": "Jaká je teplota"
+        },
+        {
+          "text": "Jaké je počasí"
+        },
+        {
+          "text": "teplota"
+        },
+        {
+          "text": "kolik stupňů je v"
+        },
+        {
+          "text": "kolik stupnu je v"
+        },
+        {
+          "text": "počasí"
+        },
+        {
+          "text": "pocasi"
+        }
+      ]
+    },
+    {
+      "intent": "DOBRA_ODPOVED",
+      "examples": [
+        {
+          "text": "Souhlasím"
+        },
+        {
+          "text": "OK"
+        },
+        {
+          "text": "doporučím vás známým"
+        },
+        {
+          "text": "Hezky se s tebou povídá"
+        },
+        {
+          "text": "Jsi roztomilý"
+        },
+        {
+          "text": "to je prima"
+        },
+        {
+          "text": "To je pravda"
+        },
+        {
+          "text": "tak se nepleteš, je hezky"
+        },
+        {
+          "text": "máš pravdu"
+        },
+        {
+          "text": "to není špatné"
+        },
+        {
+          "text": "věřím vám"
+        },
+        {
+          "text": "věřím ti"
+        },
+        {
+          "text": "umíš předpovídat"
+        },
+        {
+          "text": "dobrá předpověd"
+        },
+        {
+          "text": "to je dobré"
+        },
+        {
+          "text": "líbíš se mi"
+        },
+        {
+          "text": "jsi šikovný"
+        },
+        {
+          "text": "jsi dobrý"
+        },
+        {
+          "text": "jste dobrý"
+        },
+        {
+          "text": "kloubok dolů, jde Vám to"
+        },
+        {
+          "text": "jde Vám to"
+        },
+        {
+          "text": "to je paráda"
+        },
+        {
+          "text": "paráda"
+        },
+        {
+          "text": "skvěle"
+        },
+        {
+          "text": "to je skvělé"
+        },
+        {
+          "text": "super"
+        },
+        {
+          "text": "výborně"
+        },
+        {
+          "text": "prima"
+        },
+        {
+          "text": "nádhera"
+        },
+        {
+          "text": "to je nadhera"
+        },
+        {
+          "text": "pěkný"
+        },
+        {
+          "text": "pěkné"
+        },
+        {
+          "text": "moc pěkné"
+        },
+        {
+          "text": "no to je bomba"
+        },
+        {
+          "text": "úžas"
+        },
+        {
+          "text": "cool"
+        },
+        {
+          "text": "bájo"
+        },
+        {
+          "text": "báječné"
+        },
+        {
+          "text": "báječně"
+        }
+      ]
+    },
+    {
+      "intent": "Nápověda",
+      "examples": [
+        {
+          "text": "jak klást otázky"
+        },
+        {
+          "text": "na co se mohu ptát"
+        },
+        {
+          "text": "co můžu napsat"
+        },
+        {
+          "text": "ja s tebou mluvit"
+        },
+        {
+          "text": "s čím mi poradíš"
+        },
+        {
+          "text": "Nevím"
+        },
+        {
+          "text": "jak se mam ptat"
+        },
+        {
+          "text": "A jak se mám zeptat"
+        },
+        {
+          "text": "pomoc"
+        },
+        {
+          "text": "help"
+        },
+        {
+          "text": "nevim"
+        },
+        {
+          "text": "jak se mám zeptat"
+        },
+        {
+          "text": "co dál"
+        },
+        {
+          "text": "nic neumis"
+        },
+        {
+          "text": "co umis?"
+        },
+        {
+          "text": "jak se mám ptát"
+        },
+        {
+          "text": "co muzu napsat"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "NEROZUMIM",
+      "examples": [
+        {
+          "text": "ničemu nerozumíš"
+        },
+        {
+          "text": "nerozumíš mi"
+        },
+        {
+          "text": "vůbec nerozumíš"
+        }
+      ]
+    },
+    {
+      "intent": "JINE_JAZYKY",
+      "examples": [
+        {
+          "text": "understand"
+        },
+        {
+          "text": "Do you understand english?"
+        },
+        {
+          "text": "english"
+        },
+        {
+          "text": "Do you speak english"
+        },
+        {
+          "text": "deutsch"
+        },
+        {
+          "text": "Sprichst du Deutsch?"
+        },
+        {
+          "text": "sprechen"
+        },
+        {
+          "text": "verstehen"
+        },
+        {
+          "text": "Verstehen Sie Deutsch?"
+        },
+        {
+          "text": "how"
+        },
+        {
+          "text": "what"
+        },
+        {
+          "text": "speak"
+        }
+      ]
+    },
+    {
+      "intent": "CO_VITE",
+      "examples": [
+        {
+          "text": "Co jiného?"
+        },
+        {
+          "text": "Co dalšího?"
+        },
+        {
+          "text": "Co ještě víte?"
+        },
+        {
+          "text": "Co ještě víš?"
+        },
+        {
+          "text": "Jaké další témata?"
+        }
+      ]
+    },
+    {
+      "intent": "SPATNE",
+      "examples": [
+        {
+          "text": "to je slabé"
+        },
+        {
+          "text": "Nefunguje to"
+        },
+        {
+          "text": "nejsi moc inteligentní"
+        },
+        {
+          "text": "Jsi hlupák"
+        },
+        {
+          "text": "Moc toho nevíš"
+        },
+        {
+          "text": "Vedle"
+        },
+        {
+          "text": "Tohle jsem nemyslel."
+        },
+        {
+          "text": "Vůbec to nefunguje"
+        },
+        {
+          "text": "Nefunguješ, jak jsem si představoval"
+        },
+        {
+          "text": "To mě nezajímá"
+        }
+      ]
+    },
+    {
+      "intent": "Rekni_vtip",
+      "examples": [
+        {
+          "text": "Vtipy"
+        },
+        {
+          "text": "Say a joke"
+        },
+        {
+          "text": "Nevíš nějaký vtip"
+        },
+        {
+          "text": "Řekni vtip"
+        },
+        {
+          "text": "vtip o @vtipy_tematika"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "KDO",
+      "examples": [
+        {
+          "text": "Co jste zač?"
+        },
+        {
+          "text": "Co jsi zač?"
+        },
+        {
+          "text": "Jste člověk?"
+        },
+        {
+          "text": "Jsi člověk?"
+        },
+        {
+          "text": "Jste žena?"
+        },
+        {
+          "text": "Jsi žena?"
+        },
+        {
+          "text": "Jsi robot?"
+        },
+        {
+          "text": "Jste robot?"
+        },
+        {
+          "text": "Jste muž?"
+        },
+        {
+          "text": "Jsi muž?"
+        },
+        {
+          "text": "Jsi bot?"
+        },
+        {
+          "text": "Jste chatbot?"
+        },
+        {
+          "text": "Pověz mi něco o sobě?"
+        },
+        {
+          "text": "Jste bot?"
+        },
+        {
+          "text": "Jsi inteligentní?"
+        },
+        {
+          "text": "Jste inteligentní?"
+        },
+        {
+          "text": "Jsi chatbot?"
+        },
+        {
+          "text": "Povězte mi něco o sobě?"
+        }
+      ]
+    },
+    {
+      "intent": "CO_NE",
+      "examples": [
+        {
+          "text": "K čemu nejste dobrý?"
+        },
+        {
+          "text": "K čemu nejsi dobrý?"
+        },
+        {
+          "text": "Co neděláš?"
+        },
+        {
+          "text": "Co neděláte?"
+        },
+        {
+          "text": "Co teď neděláš?"
+        },
+        {
+          "text": "Co teď neděláte?"
+        },
+        {
+          "text": "Jaké nemáte funkce?"
+        },
+        {
+          "text": "Co neumíte?"
+        },
+        {
+          "text": "Co neumíš?"
+        },
+        {
+          "text": "Co ještě neumíš?"
+        },
+        {
+          "text": "Co nevíte?"
+        },
+        {
+          "text": "Co nevíš?"
+        },
+        {
+          "text": "Co nemohu říci?"
+        },
+        {
+          "text": "Co nemohu říct?"
+        },
+        {
+          "text": "Na co se nemohu zeptat?"
+        },
+        {
+          "text": "Na co se mohu zeptat?"
+        }
+      ]
+    },
+    {
+      "intent": "SPRAVNE",
+      "examples": [
+        {
+          "text": "Tak konečně"
+        },
+        {
+          "text": "Toto trvalo"
+        },
+        {
+          "text": "Konečně to máte správně."
+        },
+        {
+          "text": "Konečně to máš správně."
+        },
+        {
+          "text": "Konečně"
+        },
+        {
+          "text": "Máte to správně"
+        },
+        {
+          "text": "Máš to správně"
+        },
+        {
+          "text": "To to trvalo"
+        }
+      ]
+    },
+    {
+      "intent": "Tlacitka",
+      "examples": [
+        {
+          "text": "ukaz tlacitka"
+        },
+        {
+          "text": "tlacitka"
+        }
+      ]
+    },
+    {
+      "intent": "POZITIVNI",
+      "examples": [
+        {
+          "text": "děkuji Vám"
+        },
+        {
+          "text": "děkuji"
+        },
+        {
+          "text": "Děkuji Vám."
+        },
+        {
+          "text": "Děkuji Ti."
+        },
+        {
+          "text": "Díky."
+        },
+        {
+          "text": "Dakujem"
+        },
+        {
+          "text": "Díky moc."
+        },
+        {
+          "text": "Moc děkuji."
+        },
+        {
+          "text": "Děkuji."
+        },
+        {
+          "text": "Děkuju."
+        },
+        {
+          "text": "Dík."
+        },
+        {
+          "text": "Jste hodný."
+        },
+        {
+          "text": "vdaka"
+        }
+      ]
+    },
+    {
+      "intent": "NEBAVI",
+      "examples": [
+        {
+          "text": "Neotravujte"
+        },
+        {
+          "text": "Zmiz"
+        },
+        {
+          "text": "Otravujete"
+        },
+        {
+          "text": "Otravuješ"
+        },
+        {
+          "text": "To už jsi psal"
+        },
+        {
+          "text": "Jste hrozný"
+        },
+        {
+          "text": "Jsi hrozný"
+        },
+        {
+          "text": "Zmizte"
+        },
+        {
+          "text": "To už jste psal"
+        },
+        {
+          "text": "Je s vámi nuda"
+        },
+        {
+          "text": "Je s tebou nuda"
+        },
+        {
+          "text": "Už mě to nebaví"
+        },
+        {
+          "text": "Zklamal jsi"
+        },
+        {
+          "text": "Zklamal jste"
+        },
+        {
+          "text": "Zklamal jsi mě"
+        },
+        {
+          "text": "Zklamal jste mne"
+        },
+        {
+          "text": "Jsi k ničemu"
+        },
+        {
+          "text": "Jste k ničemu"
+        },
+        {
+          "text": "Ztráta času"
+        },
+        {
+          "text": "Jdi k šípku"
+        },
+        {
+          "text": "Jděte k šípku"
+        },
+        {
+          "text": "Neotravuj"
+        }
+      ]
+    },
+    {
+      "intent": "Ne",
+      "examples": [
+        {
+          "text": "No"
+        },
+        {
+          "text": "Nope"
+        },
+        {
+          "text": "Ani náhodou"
+        },
+        {
+          "text": "Ne"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "vtip_o_pepickovi",
+      "examples": [
+        {
+          "text": "pepicek"
+        },
+        {
+          "text": "o pepickovi"
+        },
+        {
+          "text": "rekni nejaky o pepickovi"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "vtipy_temata",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "pepicek",
+          "synonyms": [
+            "o Pepickovi",
+            "pepicek",
+            "pepa",
+            "o pepovi",
+            "josifek",
+            "josef",
+            "o josefovi"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "vanoce",
+          "synonyms": [
+            "o vanocich",
+            "vanocni",
+            "christmas"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-date",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "search-value",
+      "values": [
+        {
+          "type": "patterns",
+          "value": "<? $input.text ?>",
+          "patterns": [
+            ".*"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-number",
+      "values": [],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "sys-time",
+      "values": [],
+      "fuzzy_match": true
+    }
+  ],
+  "language": "cs",
+  "metadata": {
+    "api_version": {
+      "major_version": "v1",
+      "minor_version": "2018-07-10"
+    }
+  },
+  "skill_id": "9d2b8018-a688-4a2a-8661-1feca81efba3",
+  "webhooks": [
+    {
+      "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/namespaces/visitbcm.master%40gmail.com_dev/actions/WebHook.js?blocking=true",
+      "name": "main_webhook",
+      "headers": [
+        {
+          "name": "Authorization",
+          "value": "Basic YTkzOGI2NjAtNDE1ZS00MGIwLWIyODAtZDU5Njk4NDE1NGViOmRGTmFUMVVGZVQxelcxcDk1TUxJeDhuQ3ROWkN1b3NNN3BHM0puRUdhYVlXYWpaRXVscUpwUTh1RzZxNnFJODk="
+        }
+      ]
+    }
+  ],
+  "description": "",
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1574002179584",
+      "context": {
+        "search_value": "$user_input"
+      },
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1574002545212",
+      "previous_sibling": "response_4_1574002494141"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": []
+      },
+      "parent": "node_5_1574002179584",
+      "context": {
+        "search_value": ""
+      },
+      "conditions": "#Hledani_Wikipedie",
+      "dialog_node": "response_4_1574002494141"
+    },
+    {
+      "type": "standard",
+      "title": "Vanoce",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "„Mami, já bych chtěl k Vánocům psa!“ prosí Michálek maminku. „Nic si nevymýšlej, budeš mít kapra, jako my všichni.“"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_6_1572615343224",
+      "conditions": "#vanoce",
+      "dialog_node": "node_1_1573117961502",
+      "previous_sibling": "node_8_1572624418931"
+    },
+    {
+      "type": "standard",
+      "title": "Pepicek",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"Mami, mami, mám dobrou a špatnou zprávu, jakou chceš slyšet první?\" Ptá se Pepíček maminky. \"Tak tu dobrou. \"Dostal jsem jedničku z diktátu!\" \"To je hezké, Pepíčku a jaká je ta špatná?\" \"Že to není pravda!\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1572615343224",
+      "conditions": "#vtip_o_pepickovi",
+      "dialog_node": "node_8_1572624418931"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tak to vypadá, že tohle město jsem nenašel."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1573317941201",
+      "conditions": "anything_else",
+      "dialog_node": "response_1_1573318274457",
+      "previous_sibling": "response_8_1573318272798"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$name, $country - aktuální počasí: $weather, teplota $teplota stupňů Celsia."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1573317941201",
+      "context": {
+        "name": "<? $webhook_result_2.response.result.response.name ?>",
+        "country": "<? $webhook_result_2.response.result.response.sys.country ?>",
+        "teplota": "<? $webhook_result_2.response.result.response.main.temp ?>",
+        "weather": "<? $webhook_result_2.response.result.response.weather[0].description ?>"
+      },
+      "conditions": "$webhook_result_2.response.result.response.main.temp",
+      "dialog_node": "response_8_1573318272798",
+      "previous_sibling": "node_1_1573827747518"
+    },
+    {
+      "type": "standard",
+      "title": "Pocasi znovu - otazka",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hledat počasí pro další město?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Jiné město",
+                "value": {
+                  "input": {
+                    "text": "Pocasi"
+                  }
+                }
+              },
+              {
+                "label": "Ne",
+                "value": {
+                  "input": {
+                    "text": "Ne"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_3_1573317941201",
+      "context": {},
+      "conditions": "true",
+      "dialog_node": "node_1_1573827747518",
+      "previous_sibling": "node_8_1573325988340"
+    },
+    {
+      "type": "standard",
+      "title": "Teplo nebo zima?",
+      "parent": "node_3_1573317941201",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_1_1573827747518"
+      },
+      "conditions": "$teplota",
+      "dialog_node": "node_8_1573325988340"
+    },
+    {
+      "type": "standard",
+      "title": "Hledat - znovu vyplneno",
+      "parent": "node_7_1574001358581",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1572865487003"
+      },
+      "conditions": "true",
+      "dialog_node": "node_8_1574001537564",
+      "previous_sibling": "node_4_1574001446641"
+    },
+    {
+      "type": "standard",
+      "title": "Hledat znovu - co hledat",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Co chcete vyhledat?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1574001358581",
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1572865487003"
+      },
+      "conditions": "#Hledani_Wikipedie",
+      "dialog_node": "node_4_1574001446641"
+    },
+    {
+      "type": "standard",
+      "title": "Cas - znovu (mesto zadano)",
+      "parent": "node_6_1574004651871",
+      "context": {
+        "cas_znovu": true
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_2_1574004651871"
+      },
+      "conditions": "!#Ne",
+      "dialog_node": "node_8_1574101732717",
+      "previous_sibling": "node_1_1574100385818"
+    },
+    {
+      "type": "standard",
+      "title": "Cas - konec",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "OK, co byste chtěli vědět ještě? "
+              },
+              {
+                "text": "(Pro nápovědu, co umím, napište \"pomoc\" nebo \"tlačítka\".)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1574004651871",
+      "context": {
+        "cas_znovu": false
+      },
+      "conditions": "#Ne",
+      "dialog_node": "node_6_1574101302077",
+      "previous_sibling": "node_8_1574101732717"
+    },
+    {
+      "type": "standard",
+      "title": "Cas znovu (mesto nezadano)",
+      "parent": "node_6_1574004651871",
+      "context": {
+        "cas_znovu": true
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_1_1574004651865"
+      },
+      "conditions": "#Jaky_je_cas || #Ano",
+      "dialog_node": "node_1_1574100385818"
+    },
+    {
+      "type": "standard",
+      "title": "Hledat znovu - Ano, Ne, anything",
+      "parent": "node_3_1573925089984",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_7_1574001358581"
+      },
+      "conditions": "!#Ne",
+      "dialog_node": "node_5_1574002179584",
+      "previous_sibling": "response_5_1574002290262"
+    },
+    {
+      "type": "standard",
+      "title": "Hledani - konec",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ok, co dále?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1573925089984",
+      "context": {
+        "search_wiki": false
+      },
+      "conditions": "#Ne",
+      "dialog_node": "node_3_1574003276884",
+      "previous_sibling": "node_5_1574002179584"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_3_1573925089984",
+      "disabled": true,
+      "dialog_node": "response_5_1574002290262"
+    },
+    {
+      "type": "standard",
+      "title": "Hledej znovu - user input to context variable",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_4_1572964875887",
+      "context": {
+        "user_input": "<?input.text?>"
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1573925089984"
+    },
+    {
+      "type": "standard",
+      "title": "Wikipedia - hledej",
+      "output": {},
+      "parent": "node_1_1572792621698",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "action": "Wiki",
+            "search_value": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_4_1572964875887"
+      },
+      "conditions": "$search_wiki",
+      "dialog_node": "node_1_1572865487003",
+      "previous_sibling": "response_10_1572865881123"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Umím hledat ve Wikipedii. Co mám hledat (třeba jméno, historický fakt, něco ze zeměpisu..)?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1572792621698",
+      "context": {
+        "search_wiki": true
+      },
+      "conditions": "true",
+      "dialog_node": "response_10_1572865881123",
+      "previous_sibling": "slot_1_1572866061289"
+    },
+    {
+      "type": "standard",
+      "title": "Hledat znovu?",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Chceš hledat něco dalšího?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Hledej znovu",
+                "value": {
+                  "input": {
+                    "text": "Hledej znovu"
+                  }
+                }
+              },
+              {
+                "label": "Ne",
+                "value": {
+                  "input": {
+                    "text": "Ne"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_1_1572792621698",
+      "context": {},
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1573925089984"
+      },
+      "conditions": "true",
+      "dialog_node": "node_4_1572964875887",
+      "previous_sibling": "node_1_1572865487003"
+    },
+    {
+      "type": "slot",
+      "title": "slot_1_1572866061289",
+      "output": {},
+      "parent": "node_1_1572792621698",
+      "dialog_node": "slot_1_1572866061289"
+    },
+    {
+      "type": "standard",
+      "title": "Pocasi znovu (mesto zadano)",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1573827747518",
+      "context": {
+        "pocasi_znovu": true
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_3_1573317941201"
+      },
+      "conditions": "!#Ne",
+      "dialog_node": "node_2_1574265009286",
+      "previous_sibling": "node_1_1574264990679"
+    },
+    {
+      "type": "standard",
+      "title": "Pocasi - konec",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "OK, co byste chtěli vědět ještě? "
+              },
+              {
+                "text": "<i>Pro nápovědu, co umím, napište \"pomoc\" nebo \"tlačítka\".</i>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1573827747518",
+      "context": {
+        "pocasi_znovu": false
+      },
+      "conditions": "#Ne",
+      "dialog_node": "node_3_1574265148659",
+      "previous_sibling": "node_2_1574265009286"
+    },
+    {
+      "type": "standard",
+      "title": "Pocasi znovu (mesto nezadano)",
+      "output": {},
+      "parent": "node_1_1573827747518",
+      "context": {
+        "pocasi_znovu": true
+      },
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1573317673228"
+      },
+      "conditions": "#Jake_je_pocasi || #Ano",
+      "dialog_node": "node_1_1574264990679"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahoj, jsem jednoduchý chatbot, který umí vyhledávat v internetových databázích pomocí API .  <br /> Znám pár vtipů, vím jak hledat ve Wikipedii nebo vám zjistím aktuální počasí a čas ve světových městech. <br /> Co pro Vás mohu udělat?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Hledat",
+                "value": {
+                  "input": {
+                    "text": "Hledat"
+                  }
+                }
+              },
+              {
+                "label": "Vtipy",
+                "value": {
+                  "input": {
+                    "text": "Rekni vtip"
+                  }
+                }
+              },
+              {
+                "label": "Počasí",
+                "value": {
+                  "input": {
+                    "text": "Jak je v"
+                  }
+                }
+              },
+              {
+                "label": "Čas",
+                "value": {
+                  "input": {
+                    "text": "Cas"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "Welcome",
+      "context": {
+        "poprve": true
+      },
+      "disabled": true,
+      "conditions": "$poprve",
+      "dialog_node": "response_4_1574104171160"
+    },
+    {
+      "type": "standard",
+      "title": "Pocasi - hledej",
+      "parent": "node_6_1573317673228",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "action": "Weather",
+            "search_value": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "body",
+        "dialog_node": "node_8_1573325988340"
+      },
+      "conditions": "true",
+      "dialog_node": "node_3_1573317941201",
+      "previous_sibling": "response_5_1574264506142"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Zadej prosím název města."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1573317673228",
+      "conditions": "$pocasi_znovu",
+      "dialog_node": "response_5_1574264506142",
+      "previous_sibling": "response_7_1574264486080"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Chceš vědět počasí v některém ze světových měst? Zadej prosím název města."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_6_1573317673228",
+      "conditions": "#Jake_je_pocasi && !$pocasi_znovu",
+      "dialog_node": "response_7_1574264486080"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "... příjemná teplota, to jim závidím... "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1573325988340",
+      "conditions": "$teplota >20 and $teplota <30",
+      "dialog_node": "response_9_1574093140266",
+      "previous_sibling": "response_9_1573650055167"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Uff, tam je teda asi pěkný vedro..."
+              },
+              {
+                "text": "Hm, teploučko, to jim můžeme závidět ..."
+              },
+              {
+                "text": " "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1573325988340",
+      "conditions": "$teplota > 30",
+      "dialog_node": "response_9_1573650055167",
+      "previous_sibling": "response_6_1573327086984"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "...docela kosa..."
+              },
+              {
+                "text": "...pocasi, ze by psa nevyhnal..."
+              },
+              {
+                "text": "... hm, no nic moc pocasi..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_8_1573325988340",
+      "conditions": "$teplota < 10 and $teplota > 0",
+      "dialog_node": "response_6_1573327086984"
+    },
+    {
+      "type": "standard",
+      "title": "Cas - hledej",
+      "output": {},
+      "parent": "node_1_1574004651865",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "action": "Weather",
+            "search_value": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "condition",
+        "dialog_node": "node_6_1574004651871"
+      },
+      "conditions": "true",
+      "dialog_node": "node_2_1574004651871",
+      "previous_sibling": "response_4_1574101211997"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Zadejte nazev mesta."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1574004651865",
+      "conditions": "$cas_znovu",
+      "dialog_node": "response_4_1574101211997",
+      "previous_sibling": "response_10_1574101202562"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Teď je <? now().reformatDateTime('HH:mm:ss') ?>. Chceš vědět čas v některém ze světových měst? Zadej prosím název města."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1574004651865",
+      "conditions": "#Jaky_je_cas && !$cas_znovu",
+      "dialog_node": "response_10_1574101202562"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_8_1572866061301",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "slot_1_1572866061289",
+      "event_name": "focus",
+      "dialog_node": "handler_8_1572866061301",
+      "previous_sibling": "handler_5_1572866061301"
+    },
+    {
+      "type": "event_handler",
+      "title": "handler_5_1572866061301",
+      "output": {},
+      "parent": "slot_1_1572866061289",
+      "context": {},
+      "conditions": "",
+      "event_name": "input",
+      "dialog_node": "handler_5_1572866061301"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "$name,  $country - aktuální čas: $city_time"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1574004651871",
+      "context": {
+        "name": "<? $webhook_result_2.response.result.response.name ?>",
+        "country": "<? $webhook_result_2.response.result.response.sys.country ?>",
+        "city_time": "<? now().plusSeconds( $webhook_result_2.response.result.response.timezone.toInt()-3600).reformatDateTime('HH:mm') ?>"
+      },
+      "conditions": "$webhook_result_2.response.result.response.name",
+      "dialog_node": "response_7_1574004651871",
+      "previous_sibling": "node_6_1574004651871"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tak to vypadá, že tohle město jsem nenašel."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_2_1574004651871",
+      "conditions": "anything_else",
+      "dialog_node": "response_9_1574004651871",
+      "previous_sibling": "response_7_1574004651871"
+    },
+    {
+      "type": "standard",
+      "title": "Cas znovu - otazka",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hledat čas pro další město?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Jiné město",
+                "value": {
+                  "input": {
+                    "text": "Cas"
+                  }
+                }
+              },
+              {
+                "label": "Ne",
+                "value": {
+                  "input": {
+                    "text": "Ne"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "parent": "node_2_1574004651871",
+      "context": {},
+      "conditions": "true",
+      "dialog_node": "node_6_1574004651871"
+    },
+    {
+      "type": "response_condition",
+      "title": "response_6_1572792684654",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<? $webhook_result_1 ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1572865487003",
+      "conditions": "anything_else",
+      "dialog_node": "response_6_1572865487008",
+      "previous_sibling": "response_5_1572865487008"
+    },
+    {
+      "type": "response_condition",
+      "title": "response_8_1572792683846",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "<? $webhook_result_1.response.result.response ?>"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1572865487003",
+      "context": {
+        "search_value": "<? input.text ?>"
+      },
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_5_1572865487008"
+    },
+    {
+      "type": "standard",
+      "title": "Proc me vytvorili",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Jsem tu jako příklad současných trendů v IT : použití cloudu, umělé inteligence a API."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#PROC",
+      "dialog_node": "node_3_1573502783985",
+      "previous_sibling": "node_7_1573496425359"
+    },
+    {
+      "type": "standard",
+      "title": "Pozdrav",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahoj. "
+              },
+              {
+                "text": "Dobrý den."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#POZDRAVY",
+      "dialog_node": "node_8_1573323976517",
+      "previous_sibling": "node_7_1572966344570"
+    },
+    {
+      "type": "standard",
+      "title": "Co neumim",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Umím pár vtipů, zjistit počasí a zeptat se české Wikipedie. Ale budu moc rád, když mě naučíš víc."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#CO_NE",
+      "dialog_node": "node_6_1573495991657",
+      "previous_sibling": "node_8_1573323976517"
+    },
+    {
+      "type": "standard",
+      "title": "Ne",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "OK, tak co dále?"
+              },
+              {
+                "text": "OK, s čím vám ještě můžu pomoci? "
+              },
+              {
+                "text": "OK, rozumím, tak co byste chtěli vědět nyní?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#Ne",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_7_1572966344570",
+      "previous_sibling": "node_6_1573129555553"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Promiň, nerozumím, zkuste třeba zadat \"hledej ve Wiki\", nebo \"jaké je počasí\"."
+              },
+              {
+                "text": "Omlouvám se, teď jsem se zamyslel a zapomněl jsem, co mám udělat."
+              },
+              {
+                "text": "Asi jsem vám nerozuměl. Můžu pomoci nějak jinak?"
+              },
+              {
+                "text": "Pardon, mám toho moc, a pak se v tom ztrácím. Co mám udělat?"
+              },
+              {
+                "text": "Tomu jsem nerozuměl, ale můžeme si třeba povídat o počasí. Jak se dneska máte?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_1_1573647988720"
+    },
+    {
+      "type": "standard",
+      "title": "Jsem nudny",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Nezlobte se. Dělám co můžu. Ale je pravda, že moc mne toho nenaučili :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#NEBAVI",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_2_1573502960635",
+      "previous_sibling": "node_3_1573502783985"
+    },
+    {
+      "type": "standard",
+      "title": "Wikipedia",
+      "metadata": {
+        "callout": {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "titles": "$search_value"
+          },
+          "result_variable": "webhook_result_1"
+        },
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_1_1572865487003"
+      },
+      "conditions": "#Hledani_Wikipedie",
+      "dialog_node": "node_1_1572792621698",
+      "previous_sibling": "node_6_1572615343224"
+    },
+    {
+      "type": "standard",
+      "title": "Pocasi",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_3_1573317941201"
+      },
+      "conditions": "#Jake_je_pocasi || $pocasi_znovu",
+      "dialog_node": "node_6_1573317673228",
+      "previous_sibling": "node_7_1574001358581"
+    },
+    {
+      "type": "standard",
+      "title": "Dekuji - Neni zac",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Prosím, rádo se stalo."
+              },
+              {
+                "text": "Není zač, jsem zde abych Vám pomohl."
+              },
+              {
+                "text": "Rádo se stalo."
+              },
+              {
+                "text": "Za málo. Dělám co umím, děkuji."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#POZITIVNI",
+      "dialog_node": "node_8_1573647810030",
+      "previous_sibling": "node_7_1573647699131"
+    },
+    {
+      "type": "standard",
+      "title": "Tlacitka",
+      "output": {
+        "generic": [
+          {
+            "values": [],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Hledat",
+                "value": {
+                  "input": {
+                    "text": "Hledat"
+                  }
+                }
+              },
+              {
+                "label": "Vtipy",
+                "value": {
+                  "input": {
+                    "text": "Rekni vtip"
+                  }
+                }
+              },
+              {
+                "label": "Počasí",
+                "value": {
+                  "input": {
+                    "text": "Jak je v"
+                  }
+                }
+              },
+              {
+                "label": "Čas",
+                "value": {
+                  "input": {
+                    "text": "Cas"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "#Tlacitka",
+      "dialog_node": "node_6_1574261702986",
+      "previous_sibling": "node_6_1572961741907"
+    },
+    {
+      "type": "standard",
+      "title": "Dobra odpoved",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Děkuji, to jsem rád."
+              },
+              {
+                "text": "To je od Vás milé."
+              },
+              {
+                "text": "Snažím se, děkuji."
+              },
+              {
+                "text": "Dělám co umím, děkuji."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#DOBRA_ODPOVED",
+      "dialog_node": "node_7_1573647699131",
+      "previous_sibling": "node_3_1573503087131"
+    },
+    {
+      "type": "standard",
+      "title": "Vtip",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "A jaký vtip byste si přáli (o pepickovi, o vanocich)?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Rekni_vtip",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_6_1572615343224",
+      "previous_sibling": "node_6_1574261702986"
+    },
+    {
+      "type": "standard",
+      "title": "Hledat znovu",
+      "next_step": {
+        "behavior": "skip_user_input"
+      },
+      "conditions": "$search_wiki",
+      "dialog_node": "node_7_1574001358581",
+      "previous_sibling": "node_1_1572792621698"
+    },
+    {
+      "type": "standard",
+      "title": "Kdo jsem",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Jsem jednoduchý chatbot jako příklad integrace pomocí API."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#KDO",
+      "dialog_node": "node_10_1573496323295",
+      "previous_sibling": "node_6_1573496210934"
+    },
+    {
+      "type": "standard",
+      "title": "Nápověda",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Zkus třeba napsat: \"hledej ve Wiki\", nebo \"řekni vtip\" nebo \"jaké je počasí v\" ..."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Nápověda",
+      "dialog_node": "node_6_1572961741907",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "Cas",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "next_step": {
+        "behavior": "jump_to",
+        "selector": "user_input",
+        "dialog_node": "node_2_1574004651871"
+      },
+      "conditions": "#Jaky_je_cas || $cas_znovu",
+      "dialog_node": "node_1_1574004651865",
+      "previous_sibling": "node_6_1573317673228"
+    },
+    {
+      "type": "standard",
+      "title": "Co umis",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Umím pár vtipů, můžu zjistit počasí ve světě a nebo hledat v české Wikipedii."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#CO_VITE",
+      "dialog_node": "node_6_1573496210934",
+      "previous_sibling": "node_6_1573495991657"
+    },
+    {
+      "type": "standard",
+      "title": "Spatna odpoved",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tak to mě mrzí. Ale nelámejte nade mnou hůl."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#SPATNA_ODPOVED",
+      "dialog_node": "node_4_1573647571896",
+      "previous_sibling": "node_8_1573647810030"
+    },
+    {
+      "type": "standard",
+      "title": "Co je API",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "API je (zjednodušeně) programátorem definovaný způsob komunikace dvou programů. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#CO_JE_API",
+      "dialog_node": "node_7_1573496425359",
+      "previous_sibling": "node_10_1573496323295"
+    },
+    {
+      "type": "standard",
+      "title": "Nicemu nerozumim",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Tak to mne mrzí, zkuste třeba zadat \"hledej ve Wiki\", nebo \"Jaké je počasí\"."
+              },
+              {
+                "text": "Omlouvám se, zatím umím jen hledat ve Wiki, vtipkovat a zjistit počasí. "
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#NEROZUMIM",
+      "user_label": "No já vím, že toho zas tak moc neumím, ale třeba se to časem zlepší, když mi pomůžete.",
+      "dialog_node": "node_3_1573503087131",
+      "previous_sibling": "node_2_1573502960635"
+    },
+    {
+      "type": "standard",
+      "title": "Jine jazyky",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Sorry, I speak only czech. Leider spreche ich nur Tschechisch."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#JINE_JAZYKY",
+      "dialog_node": "node_1_1573647988720",
+      "previous_sibling": "node_1_1573324044093"
+    },
+    {
+      "type": "standard",
+      "title": "Jak se vede",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Mám se dobře, díky."
+              },
+              {
+                "text": "Supr, díky."
+              },
+              {
+                "text": "Ujde to, nestěžuju si :)"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#JAK_SE_VEDE",
+      "dialog_node": "node_1_1573324044093",
+      "previous_sibling": "node_4_1573647571896"
+    },
+    {
+      "type": "standard",
+      "title": "Objednavka Pizza",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Objednat pizzu ještě neumím, ale třeba mne to můžete naučit."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Objednavka_pizza",
+      "dialog_node": "node_6_1573129555553",
+      "previous_sibling": "node_1_1574004651865"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Ahoj, jsem jednoduchý chatbot, který umí vyhledávat v internetových databázích pomocí API .  <br /> Znám pár vtipů, vím jak hledat ve Wikipedii nebo vám zjistím aktuální počasí a čas ve světových městech. <br /> Co pro Vás mohu udělat?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          },
+          {
+            "title": "",
+            "options": [
+              {
+                "label": "Hledat",
+                "value": {
+                  "input": {
+                    "text": "Hledat"
+                  }
+                }
+              },
+              {
+                "label": "Vtipy",
+                "value": {
+                  "input": {
+                    "text": "Rekni vtip"
+                  }
+                }
+              },
+              {
+                "label": "Počasí",
+                "value": {
+                  "input": {
+                    "text": "Jak je v"
+                  }
+                }
+              },
+              {
+                "label": "Čas",
+                "value": {
+                  "input": {
+                    "text": "Cas"
+                  }
+                }
+              }
+            ],
+            "description": "",
+            "response_type": "option"
+          }
+        ]
+      },
+      "context": {},
+      "metadata": {
+        "_customization": {
+          "mcr": false
+        }
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "workspace_id": "9d2b8018-a688-4a2a-8661-1feca81efba3",
+  "counterexamples": [
+    {
+      "text": "D 100"
+    },
+    {
+      "text": "London"
+    }
+  ],
+  "system_settings": {
+    "tooling": {
+      "store_generic_responses": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    }
+  },
+  "learning_opt_out": false,
+  "status": "Available"
+}

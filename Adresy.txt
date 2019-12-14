@@ -1,4 +1,12 @@
 
+12
+https://assistant-chat-eu-gb.watsonplatform.net/web/public/a3bf1c93-e79a-41a0-9f8b-2932f5368a7c
+https://assistant-eu-gb.watsonplatform.net/eu-gb/crn:v1:bluemix:public:conversation:eu-gb:a~2F6ad241ee50b24e328fafbc8fa558b4ae:86d2fc11-1b5a-4b04-a419-8904e31970d9::/workspaces/5d6a0da5-8199-4f52-9510-626701c5f53c/build/intentsx
+
+11
+https://assistant-chat-us-south.watsonplatform.net/web/public/07c75d37-66e4-48d5-9b40-ca9e1840ccf6
+https://assistant-us-south.watsonplatform.net/us-south/crn:v1:bluemix:public:conversation:us-south:a~2F7a13dfb659d2457982f30daedf4ce827:e4506f5e-2aab-4935-bc45-eae4beba4aaf::/workspaces/a6acb318-706e-491a-9df5-3a8b195630a1/build/intentsx
+
 10
 https://assistant-chat-eu-gb.watsonplatform.net/web/public/515e274d-df8c-4f19-98f2-66591c364d5b
 https://assistant-eu-gb.watsonplatform.net/eu-gb/crn:v1:bluemix:public:conversation:eu-gb:a~2F8a80b22808bf4efca9bad77e57831486:4d1e82c3-bd30-4c8b-b2e2-abcc5f897314::/workspaces/8b660c7c-e606-46b7-aa30-211e7ff12dea/build/intentsx
@@ -38,3 +46,7 @@ https://assistant-eu-gb.watsonplatform.net/eu-gb/crn:v1:bluemix:public:conversat
 1
 https://assistant-chat-eu-de.watsonplatform.net/web/public/b3a3f44a-efbb-4492-9d43-fb9851c9605c
 https://assistant-eu-de.watsonplatform.net/eu-de/crn:v1:bluemix:public:conversation:eu-de:a~2Fcc9032b84f2c48479267c8638fc392ef:da71ae00-d343-411a-b9de-57e8a25a8f6d::/workspaces/e6d73dca-bc16-4d4f-ad2a-299ddd470575/build/intentsx
+
+0
+https://assistant-chat-eu-gb.watsonplatform.net/web/public/9160d8a0-ac95-4621-81de-bcada2b4a9cd
+https://assistant-eu-gb.watsonplatform.net/eu-gb/crn:v1:bluemix:public:conversation:eu-gb:a~2F76473a95080840c285348bcc60b0b0aa:d170f736-4eb6-476b-96c9-be7d36147601::/workspaces/b0c1efbb-f5ef-4295-92c3-a0f47969823d/build/intentsx
