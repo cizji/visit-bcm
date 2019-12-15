@@ -4,8 +4,8 @@ IBM Watson Assistant practical example - playground for visit of ZS E.Benese at 
 ## Skills
 The folder contains skill set (dialogs, entities, intents) that can be imported into Watson assistant. There are two version:
 
-1. Skills_Student.json - simple set to be used for the exercises for playing 
-2. Skills_Master.json - skillset with all features to be used as example of completed exercise
+1. Skills_Student.json - simple set to be used by students as an entry point for exercises 
+2. Skills_Master.json - skillset with all features to be used as an example of completed exercise
 
 ## Integration with WIKI
 
