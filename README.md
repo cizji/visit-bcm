@@ -1,5 +1,5 @@
-# visit-bcm
-IBM Watson Assistant practical example - this code was created as example of "How to create your Chatbot", presentation to students of Primary school of E.Benese. This presentation was organized by Broadcom in Prague.
+# Create your own Chatbot with IBM Watson
+IBM Watson Assistant practical example - this code was created as an example of "How to create your own Chatbot", presentation to students of Primary school of E.Benese. This presentation was organized by Broadcom in Prague.
 
 ## Skills
 The folder contains skill set (dialogs, entities, intents) that can be imported into Watson assistant. There are two version:
